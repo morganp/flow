@@ -1,0 +1,19 @@
+#content
+  .left.column
+    %h1
+      About RMU Flow
+    %p 
+      Text about RMU Flow
+
+  .right.column
+    = image_tag('landing.png')
+
+
+  .article_preview
+    %ul
+      - @articles.each do |article|
+        %small
+          = article.author
+        %h2
+          = article.title
+      
