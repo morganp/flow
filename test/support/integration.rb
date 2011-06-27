@@ -41,18 +41,18 @@ module Support
       assert has_no_css?('#flash', :text => message),
         "Flash #{message.inspect} does exist in the page"
     end
-    
+
     def assert_flash_alert
       assert has_css?('#alert'),
         "Flash alert does not exist in the page"
     end
-    
+
     def assert_no_flash_alert
       assert has_no_css?('#alert'),
         "Flash alert exists in the page"
     end
 
-    def assert_link(text, options)
+    def assert_link(text, options={})
       assert has_link?(text, options), "Link #{text} does not exist in the page"
     end
 
