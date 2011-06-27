@@ -8,5 +8,5 @@ Flow::Application.routes.draw do
   match '/about' => 'about#index'
 
   resources :articles, :except => :show
-  resources :users, :except => :new
+  resources :users, :except => [:new, :create]
 end
