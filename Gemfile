@@ -8,6 +8,7 @@ gem "pg"
 gem "jquery-rails"
 gem "omniauth", '~> 0.2.5'
 gem "rest-client", '~> 1.6.3'
+gem "gravatar_image_tag", "~> 1.0.0"
 
 group :test do
   gem "capybara"
